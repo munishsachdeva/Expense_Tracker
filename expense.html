@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="expense.js"></script>
+</head>
+<body>
+    <!-- <h1 style="text-align: center;"> Expense Tracker </h1><br>
+    <form id="expenseForm">
+        <label for="expenseName">Expense Name:</label>
+        <input type="text" id="expenseName" required>
+        <label for="expenseAmount">Amount:</label>
+        <input type="number" id="expenseAmount" required>
+        <button type="submit">Add Expense</button>
+      </form>
+      <table id="expenseTable">
+        <tr>
+          <th>Expense_Name</th>
+          <th>Amount</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </table> -->
+      <div class="container mt-5">
+        <h1 class="mb-4">Expense Tracker</h1>
+        <form id="expenseForm" class="mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="expenseName" class="form-label">Expense Name:</label>
+              <input type="text" id="expenseName" class="form-control" required>
+            </div>
+            <div class="col-md-4">
+              <label for="expenseAmount" class="form-label">Amount:</label>
+              <input type="number" id="expenseAmount" class="form-control" required>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="submit" class="btn btn-primary">Add Expense</button>
+            </div>
+          </div>
+        </form>
+        <table id="expenseTable" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Expense Name</th>
+              <th>Amount</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be added dynamically using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
